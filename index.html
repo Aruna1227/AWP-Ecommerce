@@ -1,0 +1,259 @@
+<!DOCTYPE html><html class="js" lang="EN"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecommerce Website 
+</title>
+
+
+
+  <script type="text/javascript" async="" src="js/trekkie.themestore.min.js"></script><script async="" src="js/gtm.js"></script><script nonce="">document.documentElement.classList.remove('no-js'); document.documentElement.classList.add('js')</script>
+    <meta name="google-site-verification" content="w4um_4h92pEHOipmSk8JHS8bY0x1c80EtfJAPo_FuU0">
+  <meta name="google-site-verification" content="Qu2Oloy2MEBgLgnmmmCTQ-0TuRH40OIOx63D8L8MbYQ">
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="CaQBRXIuVNwH2EC1xuCHC_d4f4OAXtZdBl5spn9RVkfOjayyJaayH0ZxfBoa8SnHGkpkVPyfZ0g7F7AEolR0wg">
+    <link rel="stylesheet" href="css/application-08a61f7ff46654b578cc39210fde16aee134c808dbf11c5da2484a98d7604c65.css">
+        <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer',"GTM-TMHDF2L");</script>
+  <!-- End Google Tag Manager -->
+
+  <script type="text/javascript">
+  (function(){
+    function trekkieLoadOnError() {
+      var Monorail = {
+        produce: function produce(monorailDomain, schemaId, payload) {
+          var currentMs = new Date().getTime();
+          var event = {
+            schema_id: schemaId,
+            payload: payload,
+            metadata: {
+              event_created_at_ms: currentMs,
+              event_sent_at_ms: currentMs
+            }
+          };
+          return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
+        },
+        sendRequest: function sendRequest(endpointUrl, payload) {
+          // Try the sendBeacon API
+          if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
+            var blobData = new window.Blob([payload], {
+              type: 'text/plain'
+            });
+
+            if (window.navigator.sendBeacon(endpointUrl, blobData)) {
+              return true;
+            } // sendBeacon was not successful
+
+          } // XHR beacon
+
+          var xhr = new XMLHttpRequest();
+
+          try {
+            xhr.open('POST', endpointUrl);
+            xhr.setRequestHeader('Content-Type', 'text/plain');
+            xhr.send(payload);
+          } catch (e) {
+            console.log(e);
+          }
+
+          return false;
+        },
+        isIos12: function isIos12() {
+          return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
+        }
+      };
+      Monorail.produce('monorail-edge.shopifysvc.com',
+        'theme_store_trekkie_load_error/1.0',
+        {
+          url: window.location.href,
+          
+            'locale': 'en',
+          
+      });
+    }
+    var config = {
+      'Trekkie': {
+        'appName': 'themestore',
+        'defaultAttributes': {
+          
+        },
+        'navigationTimingApiMeasurementsEnabled': true,
+        'navigationTimingApiMeasurementsSampleRate': 0.01,
+        'isServerSideCookieWritingEnabled': true
+      },
+      'Clickstream': {
+        'appName': 'themestore'
+      },
+      'Optimizely': {}
+    };
+    var trekkie_version = '2020.07.23.1';
+    var analytics = window.analytics = window.analytics || [];
+    if (analytics.integrations) {
+      return;
+    }
+    analytics.methods = [
+      'identify',
+      'page',
+      'ready',
+      'track',
+    ];
+    analytics.factory = function(method){
+      return function(){
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        analytics.push(args);
+        return analytics;
+      };
+    };
+    for (var i = 0; i < analytics.methods.length; i++) {
+      var key = analytics.methods[i];
+      analytics[key] = analytics.factory(key);
+    }
+    analytics.load = function(config){
+      analytics.config = config;
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.onerror = trekkieLoadOnError
+      script.async = true;
+      script.src = '//cdn.shopify.com/s/trekkie.' + config.Trekkie.appName + '.min.js?v=' + trekkie_version;
+      var first = document.getElementsByTagName('script')[0];
+      first.parentNode.insertBefore(script, first);
+    };
+    analytics.load(config);
+    analytics.page();
+  })();
+</script>
+
+</head>
+
+<body class="page--styles-preview shopify-sans-supported-lang segment-online">
+      <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMHDF2L"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div id="root_login_modal" data-enabled="true"></div>
+
+  <div id="GlobalIconSymbols"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="icons-polaris-mobile-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M14 20c-.275 0-.55-.112-.747-.335l-8-9c-.337-.38-.337-.95 0-1.328l8-9c.366-.414.998-.452 1.41-.083.414.366.45 1 .084 1.41l-7.41 8.337 7.41 8.337c.367.412.33 1.045-.083 1.41-.19.17-.428.254-.664.254z"></path></svg>
+</symbol><symbol id="modules-caret-down"><svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" viewBox="0 0 10.289 6.563"><path d="M5.212 6.563L0 1.423 1.404 0l3.788 3.735L8.865.01l1.424 1.404"></path></svg></symbol><symbol id="icons-polaris-desktop"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="currentColor" d="M1 1h18v10H1V1z"></path><path d="M13 14H2v-2h16v2h-5zm-.606 4H7.606c.16-.522.295-1.182.357-2h4.074c.062.818.196 1.478.357 2zM2 10V2h16v8H2zM19 0H1a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h4.95c-.156 1.657-.66 2.293-.658 2.293A.999.999 0 1 0 6 20h8c.39 0 .734-.242.897-.598s.09-.788-.166-1.084c-.005-.007-.522-.64-.68-2.318H19a1 1 0 0 0 1-1V1a1 1 0 0 0-1-1z"></path></svg>
+</symbol><symbol id="icons-polaris-mobile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path fill="currentColor" d="M3 1h14v18H3V1z"></path><path d="M17 0a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1a1 1 0 0 1 1-1h14zM4 18h12V2H4v16zM9 6h2a1 1 0 1 0 0-2H9a1 1 0 1 0 0 2zm1 8a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path></svg>
+</symbol></svg></div>    
+<div class="signup-form-wrapper signup--hidden " data-define="{form_0: new SignupForm(this)}">
+  <form class="marketing-form signup-form stateful-form" novalidate="novalidate" autocomplete="off" data-namespace="form_0" data-hidden-fields-namespace="hiddenFields_0" data-bind-event-submit="form_0.handleSubmit(this, event)" action="https://accounts.shopify.com/store-create" accept-charset="UTF-8" method="post">
+
+
+  <div data-define="{ email0:
+  new StatefulField(
+    'email',
+    form_0,
+    this,
+    {
+      required: true,
+      validate: true,
+      live: false,
+      showHint: true,
+      showError: true
+    },
+    {},
+    'form_0'
+  )}
+" class="stateful-field email "><div data-context="email0"><label data-bind-class="{'js-has-error': state.error,'js-is-filled': state.filled || state.value.length > 0,'js-has-hint': !state.error &amp;&amp; state.hint}" class="marketing-input-wrapper"><span class="marketing-label marketing-label--in-field marketing-label--floating">Email address</span><input placeholder="Email address" aria-describedby="MessageId_ccb2" name="signup[email]" type="email" autocomplete="email" data-bind="state.value" data-bind-event-blur="ShopifyMarketing.context.form_0.handleFieldBlur(ShopifyMarketing.context.email0)" data-bind-event-keyup="ShopifyMarketing.context.form_0.handleFieldKeyup(event, ShopifyMarketing.context.email0)" class="marketing-input marketing-input--floating" id="0_signup_email"></label><span class="marketing-form__messages" id="MessageId_ccb2"><span class="suggest hide" data-bind-unsafe-html="displayHint()" data-bind-show="!state.error &amp;&amp; state.hint"></span><span class="error hide" data-bind="displayError()" data-bind-show="state.error == true"></span></span></div></div>
+
+  <div data-define="{hiddenFields_0: new HiddenFields({
+      source: " ",="" source_url:="" "",="" source_url_referer:="" signup_code:="" signup_page:="" signup_page_referer:="" signup_types:="" ["online_store"],="" theme:="" selected_app:="" selected_plan:="" domain_to_connect:="" },="" this)}"="">
+    <div data-context="hiddenFields_0">
+      <input type="hidden" name="ref" value="">
+      <input type="hidden" name="language" value="en">
+      <input type="hidden" name="locale" value="en">
+      <input type="hidden" name="_y" data-bind="fields.y">
+      <input type="hidden" name="ssid" data-bind="fields.ssid">
+      <input type="hidden" name="source" data-bind="fields.source">
+      <input type="hidden" name="source_url" data-bind="fields.source_url">
+      <input type="hidden" name="source_url_referer" data-bind="fields.source_url_referer">
+      <input type="hidden" name="signup_code" data-bind="fields.signup_code">
+      <input type="hidden" name="signup_page" data-bind="fields.signup_page">
+      <input type="hidden" name="signup_page_referer" data-bind="fields.signup_page_referer">
+      <input type="hidden" name="promotional_program_code" value="">
+      <input type="hidden" name="domain_to_connect" data-bind="fields.domain_to_connect">
+
+        <input type="hidden" name="signup_types[]" value="online_store">
+
+      <input type="hidden" name="signup_types[]" data-bind-disabled="fields.signup_types" data-bind="fields.signup_type">
+      <input type="hidden" name="extra[selected_theme]" data-bind="fields.theme">
+      <input type="hidden" name="extra[selected_app]" data-bind="fields.selected_app">
+      <input type="hidden" name="extra[selected_plan]" data-bind="fields.selected_plan">
+    </div>
+  </div>
+
+  <div class=" cta_wrapper">
+    <button class="marketing-button marketing-form__button " name="button" data-bind-disabled="form_0.pending == true" type="submit">Create your store</button>
+  </div>
+</form>
+
+
+</div>
+    <div id="Announcements"></div>  
+
+<div id="SiteContainer">
+  <div id="SiteNavContainer" role="banner">
+  <div class="marketing-nav-wrapper headroom headroom--verytop headroom--top marketing-nav-pinned" role="navigation" aria-label="Main Navigation">
+    <a class="in-page-link skip-to-main visuallyhidden focusable" data-ga-event="Main Nav" data-ga-action="Skip to content" href="#Main">
+      Skip to Content
+    </a>
+  
+  </div>
+</div>
+
+
+  <div id="PageContainer">
+    <main role="main" id="Main">
+      <div class="device-preview">
+        <div class="device-preview__container" id="PreviewFrameContainer">
+          <iframe id="PreviewFrame" class="device-preview__iframe" src="https://canopy-theme-natural.myshopify.com/?_bt=BAh7BkkiC19yYWlscwY6BkVUewhJIglkYXRhBjsAVEkiJ2Nhbm9weS10aGVtZS1uYXR1cmFsLm15c2hvcGlmeS5jb20GOwBUSSIIZXhwBjsAVEkiHTIwMjQtMDgtMjlUMTg6NDc6MDguMTc1WgY7AFRJIghwdXIGOwBUSSIecGVybWFuZW50X3Bhc3N3b3JkX2J5cGFzcwY7AEY%3D--0de2cbe4ea5cc992a2bbca31b4575be33be264e2"></iframe>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+    <script>
+//<![CDATA[
+window.I18n = window.I18n || {}; window.I18n.data = {"modal":{"home":"Home","close":"Close"},"signup":{"header":"Start your free %{trial_length}-day trial of Shopify","custom_header":"%{custom_signup_header}","create_now":"Create your store","labels":{"email":"Email address","password":"Password","storename":"Store name","shop_name":"Your store name","promotional_program_promo_code":"Discount code","subdomain":"Store URL"},"subtitles":{"shop_name":"This can be changed later.","promotional_program_promo_code":"Enter the promo code that was provided to you.","subdomain":"This will be the default domain for your store, but you can add different domains later. You'll also use your Store URL to log in."},"placeholders":{"password":"Password","email":"Email address","shop_name":"Your store name","subdomain":"Store URL","autogenerated_subdomain":"Store address"},"success_messages":{"email":"Got it","password":"Looks great","shop_name":"That name is available!","subdomain":"You‘ll use this to log in to your store"},"store_address_suffix":".myshopify.com","hint_messages":{"email_typo_html":"Did you mean <button type=\"button\" data-bind-event-click=\"%{on_click}\">%{suggestion}</button>?"},"tooltip":"Start your free %{trial_length}-day trial today!","checking":"Checking...","details":{"shop_name":"If you are the owner you can <a href=\"https://%{admin}/admin\">log in here</a>"}},"forms":{"errors":{"throttled":"Too many requests from this IP, try again later.","global":{"invalid":"Please enter a valid email address","required":"This field is required.","generic":"Sorry, something went wrong. Please try again later.","throttled":"Too many requests from this IP, try again later."},"shop_name":{"empty":"Please enter a store name","minlength":"Your store name must be at least 4 characters","maxlength":"Your store name can’t be longer than 60 characters","existingAdmin":"A store with that name already exists. If you are the owner you can <a href=\"https://%{err}/admin\">log in here</a>","message":"%{err}","matchesPassword":"Your store name can’t be the same as your password","disallowed":"Your store name can’t contain the word <strong>%{err}</strong>. Try another."},"email":{"empty":"Please enter an email address","invalid":"Please enter a valid email address","member_exists":"You are already subscribed to this list","generic":"Sorry, something went wrong. Please try again later."},"password":{"empty":"Please enter a password","minlength":"Password must be at least 5 characters","spaces":"Password cannot start or end with a space"},"subdomain":{"empty":"Please enter a subdomain","minlength":"Your subdomain must be at least 4 characters","multiple":"Multiple subdomains are associated with this email","suggest":"Did you mean %{err}?","invalid":"Please enter a valid subdomain","existingAdmin":"A store with that subdomain already exists. If you are the owner you can <a href=\"https://%{err}/admin\">log in here</a>","disallowed":"Your subdomain can’t contain the word <strong>%{err}</strong>. Try another.","message":"%{err}"},"promotional_program_promo_code":{"message":"%{err}"},"autogenerated_subdomain":{"existingAdmin":"A store with that subdomain already exists. If you are the owner you can <a href=\"https://%{err}/admin\">log in here</a>","empty":"Please enter a subdomain","invalid":"Please enter a valid subdomain, only alpha-numeric characters are allowed."}}},"theme_store_frontend":{"show_button_text":"See update details","hide_button_text":"Show less","unexpected_login_error":"Unexpected error","theme_search":{"number_of_results":{"one":"%{count} result for %{search_query}. Use the up and down arrow keys to cycle through results. Press enter to search.","other":"%{count} results for %{search_query}. Use the up and down arrow keys to cycle through results. Press enter to search.","few":"%{count} results for %{search_query}. Use the up and down arrow keys to cycle through results. Press enter to search.","many":"%{count} results for %{search_query}. Use the up and down arrow keys to cycle through results. Press enter to search."}},"styles_carousel":{"title":"%{themeName} Theme - %{styleName}  - Ecommerce Website Template"},"theme_filters":{"heading":"Search filters","no_results_now":"Could not get results right now","try_again_or_home_page_html":"Try again later, or %{visit_home_page}","visit_home_page":"visit the home page","pagination":"%{first_item_index} - %{last_item_index} of %{themes_count}","filter_subheadings":{"price":"Filter by price","catalog-size":"Filter by catalog size","industry":"Filter by industry","layout":"Filter by layout","design":"Filter by design","features":"Filter by feature"},"expand_filters_label":{"price":"Expand price filters","catalog-size":"Expand filters for catalog size","industry":"Expand industry filters","layout":"Expand layout filters","design":"Expand design filters","features":"Expand feature filters"},"collapse_filters_label":{"price":"Collapse price filters","catalog-size":"Collapse filters for catalog size","industry":"Collapse industry filters","layout":"Collapse layout filters","design":"Collapse design filters","features":"Collapse feature filters"},"filter_results_count":{"one":"%{filter_label} (%{count} matching theme)","other":"%{filter_label} (%{count} matching themes)","few":"%{filter_label} (%{count} matching themes)","many":"%{filter_label} (%{count} matching themes)"},"themes_count":{"one":"%{count} theme","other":"%{count} themes","few":"%{count} themes","many":"%{count} themes"},"other_industry_search":{"label":"Other","placeholder":"Enter industry","button_label":"OK"}},"local_currency":{"estimated_price":"Estimated %{calculated_price}*","local_currency_exchange":"* Estimated Exchange Rate: 1 USD = %{currency_rate}.","local_currency_charges_notice":"Actual price may vary. Prices displayed are estimates based on current exchange rates. Exact amount charged will vary and depends on the exchange rate at the time of payment processing. Prices displayed exclude any applicable taxes and fees, which will be added to the cost of all services purchased.","local_currency_learn_more_link_html":"<a href=\"%{url}\" class=\"body-link\">Learn more</a>"}}}; window.I18n.globals = {"total_blog_subscribers":"446,005","trial_length":3,"custom_signup_header":""};
+//]]>
+</script>
+  <script src="js/rails-f96da86d32b453b6828fe1dfc1ff0644a9adef722172398dc0433fbb81630651.js" crossorigin="anonymous"></script>
+  <script src="js/runtime-12013b00c343eaa01453e44c4ad2a192267c32afa0935a958c611385e96c5a52.js"></script>
+<script src="js/vendors-caches_app_node_modules_shopify_polyfills_base_esnext-cc461fd9d2b3f228e4762f168925d1b319381e04d298d2609ea50cf067fc3fe2.js"></script>
+<script src="js/vendors-caches_app_node_modules_shopify_marketing-assets_dist_javascripts_index_js-caches_app-5f2387-2d8e419146d858a58d32127fc704ea1357684b22e925a7a3b68acf3a27947682.js"></script>
+<script src="js/vendors-caches_app_node_modules_bugsnag_js_browser_notifier_js-caches_app_node_modules_shopif-6e6b58-01b3017ef5852837876e2f172b4ddac3d9af4d2d9f7cc598e686c292eb60b76f.js"></script>
+<script src="js/vendors-caches_app_node_modules_lodash_lodash_js-caches_app_node_modules_script-loader_addScr-05e084-faae96b7f8ff71ab237c3d324399aa9743f842eb6a0b13b92a4f4ebcb458567f.js"></script>
+<script src="js/application-4aa628730b23d5fb4127cf180f47acabf5b6403f6915cb5c5e5606d256522178.js"></script>
+      <script type="text/javascript">
+  //<![CDATA[
+   var pageTrackerReadyInterval = setInterval(function(){
+     if (window._gat) { clearInterval(pageTrackerReadyInterval) } else { return; }
+     var pageTracker = _gat._getTracker("UA-82702-3");
+     pageTracker._setDomainName("themes.shopify.com");
+     pageTracker._initData();
+     try {
+       var results = new RegExp("[\\?&](source|r|ref)=([^&#]*)", "gi").exec(window.location.href);
+       if(results != null) {
+         var date = new Date();
+         var days = results[2] == 'cj' ? 45 : 7;
+         date.setTime(date.getTime()+days*86400000);
+         document.cookie = "source=" + results[2] + "; expires=" + date.toGMTString() + "; path=/; domain=.shopify.com";
+         pageTracker._setVar("ref: " + results[2]);
+       }
+     }
+     catch(e) {}
+     pageTracker._trackPageview();
+   }, 120);
+  //]]>
+</script>
+
+  
+
+
+</body></html>
